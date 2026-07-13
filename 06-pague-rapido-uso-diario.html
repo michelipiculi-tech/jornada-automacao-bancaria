@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pague Rápido: Uso no dia a dia — Jornada Automação Bancária</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root { --navy:#2b3a54; --green:#66cc66; --green-pale:#eaf7ec; --text:#424242; --bg:#f7f9f8; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family:'Roboto', Arial, Helvetica, sans-serif; background:var(--bg); color:var(--text); -webkit-font-smoothing:antialiased; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 24px 56px; }
+  .hero { padding: 40px 24px 32px; margin: 0 0 32px; }
+  .hero-inner { max-width: 760px; margin: 0 auto; }
+  .eyebrow { display:inline-flex; align-items:center; gap:8px; color:var(--green); font-weight:700; font-size:12px; letter-spacing:0.6px; text-transform:uppercase; margin:0 0 12px; }
+  .eyebrow .dot { width:6px; height:6px; border-radius:50%; background:var(--green); }
+  h1.title { color:var(--navy); font-weight:900; font-size:32px; line-height:1.15; margin:0 0 12px; letter-spacing:-0.01em; }
+  p.desc { color:#5c6672; font-size:15.5px; line-height:1.6; margin:0; max-width:560px; }
+  .aula-tag { color:#8a94a0; font-size:12.5px; font-weight:500; margin:0 0 8px; }
+  .section { margin-bottom:36px; }
+  .section h2 { color:var(--navy); font-weight:700; font-size:20px; line-height:1.25; margin:0 0 14px; }
+  .section .hr { border:none; border-top:1px solid #e4e8e6; margin:0 0 18px; }
+  p.body-text { color:var(--text); font-size:15px; line-height:1.65; margin:0 0 16px; }
+  .footer-note { margin-top:40px; padding-top:20px; border-top:1px solid #e4e8e6; color:#9aa4ae; font-size:12.5px; }
+</style>
+</head>
+<body>
+  <div class="hero" style="background:linear-gradient(135deg,#2b3a54 0%,#1c2740 100%);">
+    <div class="hero-inner">
+      <p class="aula-tag" style="color:#9fb3c8;">JORNADA AUTOMAÇÃO BANCÁRIA</p>
+      <p class="eyebrow"><span class="dot"></span>Aula 06 de 07</p>
+      <h1 class="title" style="color:#ffffff;">Pague Rápido: Uso no dia a dia</h1>
+      <p class="desc" style="color:#c7d2dc;">O fluxo do dia a dia, do agendamento à confirmação.</p>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="section">
+      <h2>Pague Rápido: uso no dia a dia</h2>
+      <hr class="hr">
+      <p class="body-text">Depois de credenciado, o fluxo diário do Pague Rápido segue quatro etapas: programar o pagamento, liberar (autorizar ou negar), enviar ao banco e acompanhar o status até a confirmação.</p>
+
+    </div>
+    <div class="section">
+      <h2>O fluxo de pagamento</h2>
+      <hr class="hr">
+      <div style="display:grid;grid-template-columns:repeat(2,minmax(200px,1fr));gap:14px;">
+        <div style="background:#ffffff;border:1px solid #e4e8e6;border-radius:10px;padding:18px;">
+          <div style="width:40px;height:40px;border-radius:9px;background:#2b3a54;display:flex;align-items:center;justify-content:center;margin-bottom:12px;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 3h9l4 4v14H6z" stroke="#ffffff" stroke-width="2" stroke-linejoin="round"/><path d="M9 12h6M9 16h6" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/></svg></div>
+          <p style="color:#2b3a54;font-weight:700;font-size:14px;line-height:1.3;margin:0 0 4px;">Programar</p>
+          <p style="color:#424242;font-size:14.5px;line-height:1.6;margin:0;">Selecionar os títulos a pagar e agendar o envio.</p>
+        </div>
+        <div style="background:#ffffff;border:1px solid #e4e8e6;border-radius:10px;padding:18px;">
+          <div style="width:40px;height:40px;border-radius:9px;background:#2b3a54;display:flex;align-items:center;justify-content:center;margin-bottom:12px;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="5" y="11" width="14" height="9" rx="2" stroke="#ffffff" stroke-width="2"/><path d="M8 11V7a4 4 0 018 0v4" stroke="#ffffff" stroke-width="2"/></svg></div>
+          <p style="color:#2b3a54;font-weight:700;font-size:14px;line-height:1.3;margin:0 0 4px;">Liberação</p>
+          <p style="color:#424242;font-size:14.5px;line-height:1.6;margin:0;">Um liberador cadastrado autoriza ou nega o pagamento.</p>
+        </div>
+        <div style="background:#ffffff;border:1px solid #e4e8e6;border-radius:10px;padding:18px;">
+          <div style="width:40px;height:40px;border-radius:9px;background:#2b3a54;display:flex;align-items:center;justify-content:center;margin-bottom:12px;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 21h18M4 21V10l8-5 8 5v11M9 21v-6h6v6" stroke="#ffffff" stroke-width="2" stroke-linejoin="round"/></svg></div>
+          <p style="color:#2b3a54;font-weight:700;font-size:14px;line-height:1.3;margin:0 0 4px;">Envio ao banco</p>
+          <p style="color:#424242;font-size:14.5px;line-height:1.6;margin:0;">Após liberado, o pagamento segue automaticamente ao banco.</p>
+        </div>
+        <div style="background:#ffffff;border:1px solid #e4e8e6;border-radius:10px;padding:18px;">
+          <div style="width:40px;height:40px;border-radius:9px;background:#2b3a54;display:flex;align-items:center;justify-content:center;margin-bottom:12px;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="#ffffff" stroke-width="2"/><path d="M12 8v4l3 2" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <p style="color:#2b3a54;font-weight:700;font-size:14px;line-height:1.3;margin:0 0 4px;">Status</p>
+          <p style="color:#424242;font-size:14.5px;line-height:1.6;margin:0;">Fica como Pago, Erro ou Aguardando, conforme o retorno do banco.</p>
+        </div>
+      </div>
+
+    </div>
+    <div class="section">
+      <h2>Antes de prosseguir</h2>
+      <hr class="hr">
+      <div style="background:#2b3a54;border-radius:14px;padding:20px 24px;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+        <p style="margin:0 0 8px;color:#66cc66;font-weight:bold;font-size:15px;">⚠️ Atenção!</p>
+        <p style="margin:0;color:#ffffff;font-size:14.5px;line-height:1.6;">O cancelamento de um pagamento só é possível antes da confirmação bancária. A exclusão do fluxo é irreversível, e títulos já pagos ficam protegidos contra exclusão ou alteração.</p>
+      </div>
+
+    </div>
+
+    <div class="footer-note">Jornada Automação Bancária · Sankhya Finance</div>
+  </div>
+</body>
+</html>
