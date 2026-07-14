@@ -10,66 +10,98 @@
   :root { --navy:#2b3a54; --green:#66cc66; --green-pale:#eaf7ec; --text:#424242; --bg:#f7f9f8; }
   * { box-sizing: border-box; }
   body { margin:0; font-family:'Roboto', Arial, Helvetica, sans-serif; background:var(--bg); color:var(--text); -webkit-font-smoothing:antialiased; }
-  .wrap { max-width: 760px; margin: 0 auto; padding: 0 24px 56px; }
-  .hero { padding: 40px 24px 32px; margin: 0 0 32px; }
-  .hero-inner { max-width: 760px; margin: 0 auto; }
+  .wrap { width: 100%; margin: 0 auto; padding: 24px 24px 40px; }
+  .hero { border-radius: 16px; padding: 28px 26px; margin: 0 0 28px; }
   .eyebrow { display:inline-flex; align-items:center; gap:8px; color:var(--green); font-weight:700; font-size:12px; letter-spacing:0.6px; text-transform:uppercase; margin:0 0 12px; }
   .eyebrow .dot { width:6px; height:6px; border-radius:50%; background:var(--green); }
-  h1.title { color:var(--navy); font-weight:900; font-size:32px; line-height:1.15; margin:0 0 12px; letter-spacing:-0.01em; }
-  p.desc { color:#5c6672; font-size:15.5px; line-height:1.6; margin:0; max-width:560px; }
+  h1.title { color:var(--navy); font-weight:900; font-size:30px; line-height:1.15; margin:0 0 12px; letter-spacing:-0.01em; }
+  p.desc { color:#5c6672; font-size:15px; line-height:1.6; margin:0; max-width:640px; }
   .aula-tag { color:#8a94a0; font-size:12.5px; font-weight:500; margin:0 0 8px; }
-  .section { margin-bottom:36px; }
-  .section h2 { color:var(--navy); font-weight:700; font-size:20px; line-height:1.25; margin:0 0 14px; }
+  .section { margin-bottom:32px; }
+  .section h2 { color:var(--navy); font-weight:700; font-size:19px; line-height:1.25; margin:0 0 14px; }
   .section .hr { border:none; border-top:1px solid #e4e8e6; margin:0 0 18px; }
-  p.body-text { color:var(--text); font-size:15px; line-height:1.65; margin:0 0 16px; }
-  .footer-note { margin-top:40px; padding-top:20px; border-top:1px solid #e4e8e6; color:#9aa4ae; font-size:12.5px; }
+  p.body-text { color:var(--text); font-size:14.5px; line-height:1.65; margin:0 0 14px; }
+  .caption { color:#7c8a97; font-size:12.5px; font-style:italic; margin:0 0 14px; }
+  .footer-note { margin-top:36px; padding-top:20px; border-top:1px solid #e4e8e6; color:#9aa4ae; font-size:12.5px; }
 </style>
 </head>
 <body>
-  <div class="hero" style="background:linear-gradient(135deg,#2b3a54 0%,#1c2740 100%);">
-    <div class="hero-inner">
+  <div class="wrap">
+    <div class="hero" style="background:linear-gradient(135deg,#2b3a54 0%,#1c2740 100%);">
       <p class="aula-tag" style="color:#9fb3c8;">JORNADA AUTOMAÇÃO BANCÁRIA</p>
       <p class="eyebrow"><span class="dot"></span>Aula 01 de 07</p>
       <h1 class="title" style="color:#ffffff;">Introdução</h1>
       <p class="desc" style="color:#c7d2dc;">Bem-vindo(a) à Jornada Automação Bancária.</p>
     </div>
-  </div>
-  <div class="wrap">
     <div class="section">
-      <h2>Objetivo desta jornada</h2>
+      <h2>Objetivo</h2>
       <hr class="hr">
-      <p class="body-text">Esta jornada capacita você sobre o motor de pagamentos e recebimentos nativo do Sankhya Finance — Boleto Rápido, Pix Imediato, Pague Rápido e DDA — permitindo operar tudo dentro do ERP, sem CNAB manual, sem planilha e sem precisar acessar o internet banking.</p>
+      <p class="body-text">Capacitar sobre o funcionamento da Automação Bancária do Sankhya Finance — o motor de pagamentos e recebimentos nativo ao ERP, que reúne Boleto Rápido, Pix Imediato, Pague Rápido e DDA em um só fluxo. O foco é habilitar a contratação e o credenciamento correto de cada serviço, além do uso no dia a dia, permitindo que pagamentos e recebimentos aconteçam de ponta a ponta dentro do ERP, sem CNAB manual, sem importação de extrato e sem necessidade de acessar a plataforma do banco.</p>
 
     </div>
     <div class="section">
-      <h2>Para quem é e o que você vai conseguir fazer</h2>
+      <h2>Para quem é este curso?</h2>
       <hr class="hr">
-      <div style="display:grid;grid-template-columns:repeat(2,minmax(200px,1fr));gap:14px;">
+      <div style="display:grid;grid-template-columns:repeat(1,minmax(190px,1fr));gap:14px;">
         <div style="background:#ffffff;border:1px solid #e4e8e6;border-radius:10px;padding:18px;">
-          <div style="width:40px;height:40px;border-radius:9px;background:#2b3a54;display:flex;align-items:center;justify-content:center;margin-bottom:12px;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="3.5" stroke="#ffffff" stroke-width="2"/><path d="M5 20c0-3.5 3-6 7-6s7 2.5 7 6" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/></svg></div>
-          <p style="color:#2b3a54;font-weight:700;font-size:14px;line-height:1.3;margin:0 0 4px;">Para quem é</p>
-          <p style="color:#424242;font-size:14.5px;line-height:1.6;margin:0;">Analistas e gestores financeiros, consultores de implantação e suporte, diretores e administradores financeiros.</p>
+          <div style="width:38px;height:38px;border-radius:9px;background:#2b3a54;display:flex;align-items:center;justify-content:center;margin-bottom:12px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="3.5" stroke="#ffffff" stroke-width="2"/><path d="M5 20c0-3.5 3-6 7-6s7 2.5 7 6" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/></svg></div>
+          <p style="color:#2b3a54;font-weight:700;font-size:14px;line-height:1.3;margin:0 0 4px;">Analistas e gestores financeiros</p>
+          <p style="color:#424242;font-size:14px;line-height:1.6;margin:0;">Profissionais que precisam automatizar a rotina de pagamentos e recebimentos, reduzindo erros operacionais e ganhando tempo na gestão de caixa.</p>
         </div>
         <div style="background:#ffffff;border:1px solid #e4e8e6;border-radius:10px;padding:18px;">
-          <div style="width:40px;height:40px;border-radius:9px;background:#2b3a54;display:flex;align-items:center;justify-content:center;margin-bottom:12px;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-          <p style="color:#2b3a54;font-weight:700;font-size:14px;line-height:1.3;margin:0 0 4px;">Habilitar e contratar</p>
-          <p style="color:#424242;font-size:14.5px;line-height:1.6;margin:0;">Você vai saber habilitar e contratar os quatro serviços de automação bancária.</p>
+          <div style="width:38px;height:38px;border-radius:9px;background:#2b3a54;display:flex;align-items:center;justify-content:center;margin-bottom:12px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="5" y="11" width="14" height="9" rx="2" stroke="#ffffff" stroke-width="2"/><path d="M8 11V7a4 4 0 018 0v4" stroke="#ffffff" stroke-width="2"/></svg></div>
+          <p style="color:#2b3a54;font-weight:700;font-size:14px;line-height:1.3;margin:0 0 4px;">Consultores de implantação e suporte</p>
+          <p style="color:#424242;font-size:14px;line-height:1.6;margin:0;">Equipes técnicas responsáveis por parametrizar os serviços, validar pré-requisitos no ERP e orientar o cliente final sobre o uso.</p>
         </div>
         <div style="background:#ffffff;border:1px solid #e4e8e6;border-radius:10px;padding:18px;">
-          <div style="width:40px;height:40px;border-radius:9px;background:#2b3a54;display:flex;align-items:center;justify-content:center;margin-bottom:12px;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="5" y="11" width="14" height="9" rx="2" stroke="#ffffff" stroke-width="2"/><path d="M8 11V7a4 4 0 018 0v4" stroke="#ffffff" stroke-width="2"/></svg></div>
-          <p style="color:#2b3a54;font-weight:700;font-size:14px;line-height:1.3;margin:0 0 4px;">Credenciar e aprovar</p>
-          <p style="color:#424242;font-size:14.5px;line-height:1.6;margin:0;">Vai conseguir credenciar contas bancárias e configurar os níveis de aprovação.</p>
+          <div style="width:38px;height:38px;border-radius:9px;background:#2b3a54;display:flex;align-items:center;justify-content:center;margin-bottom:12px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M3 21h18M4 21V10l8-5 8 5v11M9 21v-6h6v6" stroke="#ffffff" stroke-width="2" stroke-linejoin="round"/></svg></div>
+          <p style="color:#2b3a54;font-weight:700;font-size:14px;line-height:1.3;margin:0 0 4px;">Diretores e administradores financeiros</p>
+          <p style="color:#424242;font-size:14px;line-height:1.6;margin:0;">Decisores que precisam entender os planos de contratação, a governança de aprovação de pagamentos e como a automação reduz o custo operacional invisível.</p>
         </div>
-        <div style="background:#ffffff;border:1px solid #e4e8e6;border-radius:10px;padding:18px;">
-          <div style="width:40px;height:40px;border-radius:9px;background:#2b3a54;display:flex;align-items:center;justify-content:center;margin-bottom:12px;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 21h18M4 21V10l8-5 8 5v11M9 21v-6h6v6" stroke="#ffffff" stroke-width="2" stroke-linejoin="round"/></svg></div>
-          <p style="color:#2b3a54;font-weight:700;font-size:14px;line-height:1.3;margin:0 0 4px;">Operar o fluxo</p>
-          <p style="color:#424242;font-size:14.5px;line-height:1.6;margin:0;">Vai entender como operar o fluxo de pagamento do Pague Rápido e o que fazer diante de cada status.</p>
-        </div>
+      </div>
+
+    </div>
+    <div class="section">
+      <h2>Ao final deste curso, você será capaz de:</h2>
+      <hr class="hr">
+      <div style="display:flex;align-items:flex-start;gap:10px;margin-bottom:12px;">
+        <span style="flex-shrink:0;width:19px;height:19px;border-radius:50%;background:#66cc66;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <p style="color:#424242;font-size:14px;line-height:1.6;margin:0;"><strong style="color:#2b3a54;">Entender a Automação Bancária —</strong> compreender o que é, quais dores resolve e os diferenciais frente a processos manuais.</p>
+      </div>
+      <div style="display:flex;align-items:flex-start;gap:10px;margin-bottom:12px;">
+        <span style="flex-shrink:0;width:19px;height:19px;border-radius:50%;background:#66cc66;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <p style="color:#424242;font-size:14px;line-height:1.6;margin:0;"><strong style="color:#2b3a54;">Contratar os serviços Fintech —</strong> navegar pelo Marketplace Sankhya, escolher o pacote adequado e formalizar o aceite eletrônico do contrato.</p>
+      </div>
+      <div style="display:flex;align-items:flex-start;gap:10px;margin-bottom:12px;">
+        <span style="flex-shrink:0;width:19px;height:19px;border-radius:50%;background:#66cc66;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <p style="color:#424242;font-size:14px;line-height:1.6;margin:0;"><strong style="color:#2b3a54;">Credenciar Boleto Rápido, Pix Imediato e Pague Rápido —</strong> executar o fluxo completo de credenciamento de cada serviço, incluindo credenciais via API e via EDI/CNAB.</p>
+      </div>
+      <div style="display:flex;align-items:flex-start;gap:10px;">
+        <span style="flex-shrink:0;width:19px;height:19px;border-radius:50%;background:#66cc66;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <p style="color:#424242;font-size:14px;line-height:1.6;margin:0;"><strong style="color:#2b3a54;">Operar o dia a dia dos pagamentos e recebimentos —</strong> emitir boletos, gerar cobranças via Pix, programar e autorizar pagamentos, e tratar exceções.</p>
+      </div>
+
+    </div>
+    <div class="section">
+      <h2>Caso encontre dificuldades</h2>
+      <hr class="hr">
+      <div style="background:#eaf7ec;border-radius:10px;padding:18px 20px;">
+        <p style="margin:0 0 8px;color:#2b3a54;font-weight:700;font-size:14px;">Precisa de ajuda?</p>
+        <p style="margin:0;color:#424242;font-size:14px;line-height:1.6;">Se você encontrar dificuldades ao longo do processo, use a <a href="https://community.sankhya.com.br/" target="_blank" rel="noopener" style="color:#3fa860;font-weight:700;">Comunidade</a> ou a <a href="https://ajuda.sankhya.com.br/" target="_blank" rel="noopener" style="color:#3fa860;font-weight:700;">Central de Ajuda</a> — ótimos lugares para trocar experiências e aprender com outros usuários.</p>
       </div>
 
     </div>
 
     <div class="footer-note">Jornada Automação Bancária · Sankhya Finance</div>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.9/iframeResizer.contentWindow.min.js"></script>
 </body>
 </html>
